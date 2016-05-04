@@ -1,0 +1,93 @@
+<ion-view view-title="" hide-nav-bar="false">
+
+      <div class="tabs-striped tabs-color-{{customClass}}">
+    <div class="tabs">
+      <a class="tab-item" href="#/app/business">
+        <i class="icon ion-ios-people"></i>
+          <p>About</p>
+      </a>
+      <a class="tab-item" href="#/app/business-services">
+        <i class="icon ion-ios-flask"></i>
+          <p>Services</p>
+      </a>
+      <a class="tab-item" href="#/app/business-portfolio">
+        <i class="icon ion-ios-glasses"></i>
+          <p>Portfolio</p>
+      </a>
+      <a class="tab-item active" href="#/app/business-contact">
+        <i class="icon ion-ios-email"></i>
+          <p>Contact</p>
+      </a>
+    </div>
+  </div>
+    
+    <ion-content class="padding businessScreen">
+
+        <div class="card">
+          <div class="item item-text-wrap">
+            <h1 class="center logo">Contact {{mainLogo}}</h1>
+
+              <div class="row">
+                  <div class="col">
+                    <h1>Location</h1>
+                    <h2>{{contactAddress1}}</h2>
+                    <h2>{{contactAddress2}}</h2>
+                  </div>
+                  <div class="col">
+                    <h1>Phone</h1>
+                    <h2>{{contactAddressPhone}}</h2>
+                  </div>
+              </div>
+              
+              <map center="[40.76, -74.16]">
+                  <marker
+                      position="[40.76, -74.16]"
+                      title="Hello Marker"
+                      animation="Animation.BOUNCE"
+                      draggable="true"
+                      visible="true"
+                      icon="img/marker.png"></marker>
+                    <info-window id="bar" position="40.762, -74.16" visible="true">
+                        <div ng-non-bindable>
+                          <div id="siteNotice">Here is what you looking for!</div>
+                        </div>
+                      </info-window>
+                </map>
+              
+            <h1>Leave us a message</h1>
+              
+            <form ng-submit="doContact()">
+              <div class="list">
+                <label class="item item-input">
+                  <span class="input-label">Full Name</span>
+                  <input type="text" ng-model="contactData.fullname">
+                </label>
+                <label class="item item-input">
+                  <span class="input-label">Email</span>
+                  <input type="email" ng-model="contactData.email">
+                </label>
+                <label class="item item-input">
+                  <span class="input-label">Phone Number</span>
+                  <input type="tel" ng-model="contactData.phone">
+                </label>
+                <list class="item item-input"> 
+                  <span class="input-label">Your Message</span>
+                  <input type="text" ng-model="contactData.message">
+                </list>
+                <label class="item">
+                  <button class="button button-block button-{{customClass}}" type="submit">Send</button>
+                </label>
+              </div>
+        </form>
+              
+        </div>
+  
+    </div>
+        
+  </ion-content>
+    
+        
+        
+        
+        
+</ion-view>

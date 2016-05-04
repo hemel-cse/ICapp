@@ -1,0 +1,25 @@
+<ion-view view-title="{{post.title}}" hide-nav-bar="false" autoscroll="false">
+<i class="icon ion-ios-arrow-back" ng-click="back()"></i>
+    <ion-content padding="false">
+
+    <img src="{{post.featured_image.source}}" width="100%" />
+        
+  <h2>{{post.title}}</h2>    
+      <div class="item item-avatar">
+                <img src="{{post.author.avatar}}">
+                <h2>{{post.author.name}}</h2>
+                <p>{{post.date_gmt | limitTo : 10}}</p>          
+      </div>
+        
+    <div class="item item-body" ng-bind-html="post.content"></div>
+
+     <ion-list>
+               <ion-item ng-repeat="comment in comments" class="item-thumbnail-left">
+                    <img src="{{comment.author.avatar}}">
+                    <h3 ng-bind-html="comment.author.name"></h3>
+                    <p ng-bind-html="comment.content"></p>        
+               </ion-item>
+            </ion-list>     
+
+    </ion-content>
+ </ion-view>

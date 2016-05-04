@@ -1,0 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Kaushan+Script);
+
+
+
+* { color: #fff; font-family: 'Lato', sans-serif !important;}
+h1,h2,h3, h4, h5 { font-weight:100; color: #fff;}
+p { font-weight: 300; color: #fff;}
+h6,a,small { font-weight:300; color: #fff;}
+a {text-decoration: none; color: inherit;}
+.center { text-align: center;}
+.pane { background-color: #3F51B5;}
+
+.logo { font-family: 'Kaushan Script', cursive !important; padding-top: 20px;}
+
+.float-button { -webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%; width: 45px; height: 43px; padding: 0px; line-height: 0px; min-height: 0px; min-width: 0px; color: #fff; position: fixed; top: 35px; /* Adjust to where you want it */ left: 25px; /* Adjust to where you want it */ z-index: 9999;
+    
+}
+
+.modal, .popup-container .popup { background-color: #3949AB;}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"] { color: #fff;}
+
+.ion-ios-arrow-back { position: absolute; font-size: 45px; z-index: 9999; margin: 20px;}
+
+a.item { background-color: transparent; border: 1px solid #3949AB; color: #fff;}
+.item { background-color: #3949AB; border: 1px solid #303F9F ; color: #fff;}
+.item p { color: #fff;}
+.item-complex .item-content, .item-radio .item-content { background-color: transparent;}
+
+.input-label { color: #fff;}
+
+.barModal { margin-top: 20px;}
+
+
+/* MENU LEFT */
+
+.menu-left { background-color: #283593; text-align: center;}
+.menu-left .icon { font-size: 35px;}
+
+/* HOME SCREEN */
+
+.homeScreen { padding-left: 0px; padding-right: 0px;}
+.homeScreen .row { padding: 0px;}
+.homeScreen .col { }
+.homeScreen .icon, .homeScreen h4 { color: #fff;}
+.homeScreen .icon { font-size: 60px;}
+.homeScreen h4 { font-weight: 400;}
+
+
+/* MAP SCREEN */
+
+.mapScreen p, .mapScreen h1, .mapScreen h5, #siteNotice { color: #333;}
+.mapScreen .title { color: #fff;}
+
+/* BUSINESS AREA */
+
+.businessScreen .tabs { color: #333;}
+.tabs-striped .tabs { background-color: #3949AB;}
+.tab-item { background-color: transparent; border: 0px; }
+.tab-item p { margin-top: -50px; font-size: 9px; text-transform: uppercase; font-weight: 500;}
+.imgCenterRound { -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 150px; height: 150px; display: block; border: 3px solid #fff;
+margin: 0 auto;}
+
+/* SHOP AREA */
+
+.shopScreen .productList h1 { position: absolute; background: #333; color: #fff; font-size: 18px; margin: 10px 10px;}
+.shopScreen .productList h2 { position: absolute; background: #333; color: #fff; font-size: 14px; margin: 30px 10px; font-weight: 400;}
+
+
+

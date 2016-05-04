@@ -1,0 +1,72 @@
+<ion-view view-title="" hide-nav-bar="false">
+
+    <ion-content class="padding center homeScreen">
+
+        <h1 class="center logo">{{mainLogo}}</h1>
+        
+        <div class="spacer" style="height: 30px;"></div>
+        
+    <div class="row">
+        <div class="col">
+            <a class="icon ion-ios-briefcase" ng-href="#app/business">
+             <h4>Business</h4> 
+            </a>
+        </div>
+        <div class="col">
+            <a class="icon ion-social-wordpress" ng-href="#/app/blog">
+             <h4>Blog</h4> 
+            </a>
+        </div>
+        <div class="col">
+            <a class="icon ion-ios-cart" ng-href="#/app/shop">
+             <h4>Shop</h4> 
+            </a>
+        </div>
+        <div class="col">
+            <a class="icon ion-ios-location" ng-href="#/app/map">
+             <h4>Map</h4> 
+            </a>
+        </div>
+    </div>
+        
+    <div class="spacer" style="height: 30px;"></div>
+        
+    <ul class="list">
+        <a class="item" ng-href="#/app/business-portfolio">
+          Image Gallery
+        </a>
+        <a class="item" ng-href="#/app/business-contact">
+          Contact Form (Parse)
+        </a>
+        <a class="item" ng-href="#/app/posts/0">
+          Wordpress Category Posts (WP-API)
+        </a>
+        <a class="item" ng-href="#/app/post/1178">
+          Wordpress Blog Post (WP-API)
+        </a>
+        <a class="item" ng-click="register()">
+          User Registration (Parse)
+        </a>
+        <a class="item" ng-controller="ShareCtrl" ng-click="onShare()">
+            Share
+        </a>
+        <div class="app">
+                <div id="deviceready" class="">
+                    <p class="event listening"></p>
+                    <p class="event received"></p>         
+                </div>
+            </div>
+        <a ng-show="paid==false" class="item" ng-click="payWithPaypal()">
+          PayPal Mobile SDK
+        </a>
+        <a ng-show="paid==true" class="item">
+          <i class="icon ion-checkmark-round"></i> Paid
+        </a>
+    </ul>
+
+  </ion-content>
+    
+</ion-view>
+
+
+

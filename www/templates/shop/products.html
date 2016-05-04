@@ -1,0 +1,17 @@
+<ion-view view-title="" hide-nav-bar="false">
+ 
+    <ion-content class="shopScreen" ng-init="getProducts()">
+
+          <a class="productList" ng-repeat="product in products" ng-href="#/app/shop-product">
+
+              <h1>{{product.name}}</h1>
+              <h2>$ {{product.price}}</h2>
+              <img src="img/shop/productPics/{{product.picture}}" width="100%" />
+
+        </a>  
+      
+    </div>
+        
+  </ion-content>
+ 
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="" hide-nav-bar="false">
+    
+    <ion-content class="shopScreen" ng-init="getProduct()">
+        
+        <img src="img/shop/productPics/{{product.picture}}" width="100%" />
+        
+        <div class="productSingle center padding">
+            <h3>{{product.name}}</h3>
+            <h2>$ {{product.price}}</h2>
+            <p>{{product.description}}</p>
+        </div>
+        
+        
+        <a  ng-show="paid==false" class="button button-{{customClass}} button-block" ng-click="payWithPaypal(product.price)">
+            Pay With PayPal
+        </a>
+        <a  ng-show="paid==true" class="button button-{{customClass}} button-block">
+            <i class="icon ion-checkmark-round"></i> Paid
+        </a>
+        
+        </div>
+        
+    </ion-content>
+    
+</ion-view>

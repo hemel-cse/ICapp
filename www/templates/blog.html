@@ -1,0 +1,24 @@
+<ion-view view-title="Blog" hide-nav-bar="false">
+
+    <ion-content class="center">
+        
+        <h1 class="logo center">Blog</h1>
+        
+        <span ng-controller="CategoriesCtrl">
+
+            <div class="list">
+                
+                <div class="item item-divider">Blog Posts</div>
+                <a class="item" href="#/app/posts/0" nav-clear menu-close><b>All</b></a>
+                <a class="item" nav-clear menu-close ng-repeat="category in categories" href="#/app/posts/{{category.ID}}">{{category.name}}</a> 
+                <div class="item item-divider">Pages</div>    
+
+        
+            <a class="item" nav-clear menu-close ng-repeat="page in pages" href="#/app/page/{{page.ID}}">{{page.title}}</a>
+            
+            </div>
+                
+            </span>
+        
+    </ion-content>
+</ion-view>

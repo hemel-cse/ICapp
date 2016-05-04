@@ -1,0 +1,20 @@
+<ion-view view-title="" hide-nav-bar="false">
+ 
+    <ion-content class="padding shopScreen" ng-init="getCategories()">
+
+
+          <div class="" ng-repeat="categ in categories">
+
+            <a class="item item-thumbnail-left" ng-href="#/app/shop-products">
+              <img src="img/shop/categoryIcons/{{categ.picture}}">
+              <h2>{{categ.name}}</h2>
+              <p>{{categ.description}}</p>
+            </a>
+
+        </div>  
+      
+    </div>
+        
+  </ion-content>
+ 
+</ion-view>

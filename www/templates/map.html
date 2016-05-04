@@ -1,0 +1,43 @@
+<ion-view view-title="{{mainLogo}}" hide-nav-bar="false">
+<i class="icon ion-ios-arrow-back" ng-click="back()"></i>
+
+    <ion-content class="mapScreen" ng-init="getLocation()">
+        
+        <h1 ng-show="userLocation" class="center title">{{userLocation}}</h1>
+        <h1 ng-hide="userLocation" class="center title">Turn on your GPS.</h1>
+
+        <map style="width:1000px; height:1000px;"
+             center="{{userCoords}}" 
+             zoom="14"
+             disable-default-u-i="true"
+             disable-double-click-zoom="true"
+             draggable="true">
+            
+            <span ng-repeat="item in mapItems">
+            <marker 
+                id="{{item.id}}"
+                position="[{{item.coords}}]"
+                draggable="true"
+                visible="true"
+                icon="img/marker.png"
+                title="{{item.name}}" 
+                    on-click="showInfoWindow(event, 'window')"
+                ></marker>            
+            
+                <info-window id="window" visible-on-marker="{{item.id}}">
+                     <div ng-non-bindable>
+                        <div id="siteNotice"></div>
+                          <h5 id="firstHeading" class="firstHeading">Details</h5>
+                          <p>{{item.location}}</p>
+                          <h1>{{item.name}}</h1>
+                        <div id="bodyContent">
+                          <p>description</p>
+                        </div>
+                    </div>
+                </info-window>
+            </span>
+        </map>
+        
+    </ion-content>
+    
+</ion-view>

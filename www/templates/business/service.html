@@ -1,0 +1,63 @@
+<ion-view view-title="" hide-nav-bar="false">
+<i class="icon ion-ios-arrow-back" ng-click="back()"></i>
+      <div class="tabs-striped tabs-color-{{customClass}}">
+    <div class="tabs">
+      <a class="tab-item" href="#/app/business">
+        <i class="icon ion-ios-people"></i>
+        <p>About</p>
+      </a>
+      <a class="tab-item active" href="#/app/business-services">
+        <i class="icon ion-ios-flask"></i>
+        <p>Services</p>
+      </a>
+      <a class="tab-item" href="#/app/business-portfolio">
+        <i class="icon ion-ios-glasses"></i>
+        <p>Portfolio</p>
+      </a>
+      <a class="tab-item" href="#/app/business-contact">
+        <i class="icon ion-ios-email"></i>
+        <p>Contact</p>
+      </a>
+    </div>
+  </div>
+    
+    <ion-content class="padding businessScreen">
+
+        <div class="card center">
+          <div class="item item-text-wrap">
+            <h1 class="center logo">Service</h1>
+
+              <p>Fully is the best thing that could happen to you.</p>
+              
+            <ion-slide-box>
+              <ion-slide>
+                <div class="box">
+                    <img src="{{aboutPicture}}">
+                </div>
+              </ion-slide>
+              <ion-slide>
+                <div class="box">
+                    <img src="{{aboutPicture}}">
+                </div>
+              </ion-slide>
+              <ion-slide>
+                <div class="box">
+                    <img src="{{aboutPicture}}">
+                </div>
+              </ion-slide>
+            </ion-slide-box>
+              
+              <p>{{about}}</p>
+            
+            
+        </div>
+            
+    </div>
+        
+  </ion-content>
+    
+        
+        
+        
+        
+</ion-view>
